@@ -12,7 +12,7 @@ public class MatchPhoneNumber {
 
         String input = scanner.nextLine();
 
-        Pattern pattern = Pattern.compile("(?:\\+[3][5][9] [2] [0-9]{3} [0-9]{4}\\b|\\+[3][5][9]-[0-9]-[0-9]{3}-[0-9]{4}\\b)");
+        Pattern pattern = Pattern.compile("\\+[3][5][9] [2] [0-9]{3} [0-9]{4}\\b|\\+[3][5][9]-[0-9]-[0-9]{3}-[0-9]{4}\\b");
         Matcher matcher = pattern.matcher(input);
 
         List<String> numbers = new ArrayList<>();
